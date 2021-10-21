@@ -1,0 +1,82 @@
+*{padding: 0;margin: 0;box-sizing: border-box;}
+
+.d-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.d-flex-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+.center{ margin: 10px auto; padding: 10px 30px; display: flex; justify-content: center;}
+/* navbar section css */
+
+nav{
+    background: #00ccff;
+    width: 100%;
+    padding: 20px 40px;
+    border-bottom: 1px solid #000;
+}
+nav .logo{
+    font-size: 24px;
+    color: #fff;
+    font-weight: 800;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    padding: 0 15px;
+}
+nav ul li a{
+    color: #d400d4;
+    text-decoration: none;
+    font-size: 18px;
+}
+#bars{
+    color: #fff;
+    font-size: 24px;
+    cursor: pointer;
+    display: none;
+}
+button{border: none; outline: none; padding: 8px 20px; color: #fff; background: #d400d4;}
+
+@media(max-width: 776px){
+    #bars{display: block;}
+
+    nav{width: 100%; position: relative; }
+    nav ul{position: absolute;left: 0; top: 60px; background: #00ccff; width: 100%; text-align: center; }
+    nav ul li{display: block; padding: 10px 0; transition: 0.4s;}
+}
+
+
+
+/* form css */
+
+form{width: 90%; padding: 20px; max-width: 600px; background: #fff; box-shadow: 0 0 20px rgba(0,0,0.2);}
+form input{width: 100%; display: block; margin: 10px 5px; padding: 10px ;}
+
+
+
+/* positon css */
+
+
+.box{position: relative; border: 1px solid #00ccff; width: 90%; max-width: 600px; margin: 150px auto; box-shadow: 0 0 15px rgba(0,0,0.2);
+padding: 60px; justify-content: center;
+}
+.box p{text-align: center; }
+
+.profile{position: absolute;
+    top: 0%;
+    left: 50%;
+    border-radius: 100%;
+    border: 1px solid #000;
+    transform: translate(-50%, -62%);
+}
